@@ -1,23 +1,20 @@
 import '../Styles/Image.css';
-// import Button from './Button.jsx';
-// import {useState} from 'react';
-
-
+import Button from './Button.jsx';
 
 	
 const Image = ({W, H, source, alt}) => {
 
-// 	const [H, sizeIncrement] = useState(Image);
 
-// 	const  Enlarge = () => {
-// 			sizeIncrement(H = "100px" )	
-// 		}
+	const  Enlarge = () => {
+			W= "80%"
+			H= "80%"
+	
+		}
 
-	// const  Shrink = () => {
-	// 	Image.W = "200px"
-	// 	Image.H = "200px"
-	// 	console.log(W,H);
-	// 	}
+	const  Shrink = () => {
+		W= "120%"
+		H= "120%"
+		}
 
   return(
     <>
@@ -29,8 +26,8 @@ const Image = ({W, H, source, alt}) => {
 		alt={alt}
 	/> 
 
-	{/* <Button text="Enlarge" clickHandler={Enlarge} /> */}
-	{/* <Button text="Shrink" clickHandler={Shrink} /> */}
+	<Button text="Enlarge" clickHandler={Enlarge} />
+	<Button text="Shrink" clickHandler={Shrink} />
     </>
   );
 
